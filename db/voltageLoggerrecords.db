@@ -1,0 +1,52 @@
+record(sub,"$(SubDet):INIT") {
+       field(SNAM,"initialize")
+       field(DESC,"Initializes the logger")
+       field(INPA, "1") #start taking data if =1
+       field(INPB, "8") #number of channels
+       field(INPC, "4") #Range for channel 0
+       field(INPD, "4") #Range for channel 1
+       field(INPE, "4") #Range for channel 2
+       field(INPF, "4") #Range for channel 3
+       field(INPG, "4") #Range for channel 4
+       field(INPH, "4") #Range for channel 5
+       field(INPI, "4") #Range for channel 6
+       field(INPJ, "4") #Range for channel 7
+       # inputs e-j correspond to range for channels 2-7.
+
+       #range settings are:
+       	    #0: +/-10V
+	    #1: +/-5V
+	    #2: +/-2.5V
+	    #3: 0-10V
+	    #4: 0-5V
+	    
+       field(INPK, "3600") #number of events buffered before saving to disc
+       #parameter L is the status. 0 when stopped, 1 when running
+}
+
+
+# variables a-h are the voltage in channel 0-7.
+record(sub, "$(SubDet):VOLTAGE") {
+       field(SNAM, "getVoltage")
+       field(DESC, "get the voltages")
+       field(SCAN, "1 second")
+}
+
+#the BEAST interface
+record(calcout, "$(SubDet):DIGI:BEASTRCINTERFACE") {
+       field(INPA, "BEAST:BEASTMASTER:RC:RUN CPP")
+       field(CALC, "A?1:0")
+       field(OUT,  "$(SubDet):INIT.A PP")
+       field(SCAN, "Passive")
+       field(OOPT, "On Change")
+}
+
+record(sub,"$(SubDet):SETPATH"){
+       field(SNAM, "setPath")
+       field(DESC, "./data/")
+}
+
+record(sub, "$(SubDet):SAVEDATA"){
+       field(SNAM, "saveData")
+       field(DESC, "saves data collected to a root file")
+}

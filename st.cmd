@@ -1,0 +1,1 @@
+iocBoot/voltageLogger/st.cmd

@@ -1,0 +1,50 @@
+# DO NOT EDIT: This file created by mkmf.pl,v 1.5 2002/03/25 21:33:24 jba Exp $ 
+
+../O.Common/voltageLogger.dbd : /root/epics/base-3.14.12.3/dbd/base.dbd
+../O.Common/voltageLogger.dbd : ../voltageLoggercroutines.dbd
+../O.Common/voltageLogger.dbd : /root/epics/base-3.14.12.3/dbd/menuGlobal.dbd
+../O.Common/voltageLogger.dbd : /root/epics/base-3.14.12.3/dbd/menuConvert.dbd
+../O.Common/voltageLogger.dbd : /root/epics/base-3.14.12.3/dbd/aaiRecord.dbd
+../O.Common/voltageLogger.dbd : /root/epics/base-3.14.12.3/dbd/aaoRecord.dbd
+../O.Common/voltageLogger.dbd : /root/epics/base-3.14.12.3/dbd/aiRecord.dbd
+../O.Common/voltageLogger.dbd : /root/epics/base-3.14.12.3/dbd/aoRecord.dbd
+../O.Common/voltageLogger.dbd : /root/epics/base-3.14.12.3/dbd/aSubRecord.dbd
+../O.Common/voltageLogger.dbd : /root/epics/base-3.14.12.3/dbd/biRecord.dbd
+../O.Common/voltageLogger.dbd : /root/epics/base-3.14.12.3/dbd/boRecord.dbd
+../O.Common/voltageLogger.dbd : /root/epics/base-3.14.12.3/dbd/calcRecord.dbd
+../O.Common/voltageLogger.dbd : /root/epics/base-3.14.12.3/dbd/calcoutRecord.dbd
+../O.Common/voltageLogger.dbd : /root/epics/base-3.14.12.3/dbd/compressRecord.dbd
+../O.Common/voltageLogger.dbd : /root/epics/base-3.14.12.3/dbd/dfanoutRecord.dbd
+../O.Common/voltageLogger.dbd : /root/epics/base-3.14.12.3/dbd/eventRecord.dbd
+../O.Common/voltageLogger.dbd : /root/epics/base-3.14.12.3/dbd/fanoutRecord.dbd
+../O.Common/voltageLogger.dbd : /root/epics/base-3.14.12.3/dbd/longinRecord.dbd
+../O.Common/voltageLogger.dbd : /root/epics/base-3.14.12.3/dbd/longoutRecord.dbd
+../O.Common/voltageLogger.dbd : /root/epics/base-3.14.12.3/dbd/mbbiRecord.dbd
+../O.Common/voltageLogger.dbd : /root/epics/base-3.14.12.3/dbd/mbbiDirectRecord.dbd
+../O.Common/voltageLogger.dbd : /root/epics/base-3.14.12.3/dbd/mbboRecord.dbd
+../O.Common/voltageLogger.dbd : /root/epics/base-3.14.12.3/dbd/mbboDirectRecord.dbd
+../O.Common/voltageLogger.dbd : /root/epics/base-3.14.12.3/dbd/permissiveRecord.dbd
+../O.Common/voltageLogger.dbd : /root/epics/base-3.14.12.3/dbd/selRecord.dbd
+../O.Common/voltageLogger.dbd : /root/epics/base-3.14.12.3/dbd/seqRecord.dbd
+../O.Common/voltageLogger.dbd : /root/epics/base-3.14.12.3/dbd/stateRecord.dbd
+../O.Common/voltageLogger.dbd : /root/epics/base-3.14.12.3/dbd/stringinRecord.dbd
+../O.Common/voltageLogger.dbd : /root/epics/base-3.14.12.3/dbd/stringoutRecord.dbd
+../O.Common/voltageLogger.dbd : /root/epics/base-3.14.12.3/dbd/subRecord.dbd
+../O.Common/voltageLogger.dbd : /root/epics/base-3.14.12.3/dbd/subArrayRecord.dbd
+../O.Common/voltageLogger.dbd : /root/epics/base-3.14.12.3/dbd/waveformRecord.dbd
+../O.Common/voltageLogger.dbd : /root/epics/base-3.14.12.3/dbd/devSoft.dbd
+../O.Common/voltageLogger.dbd : /root/epics/base-3.14.12.3/dbd/menuAlarmSevr.dbd
+../O.Common/voltageLogger.dbd : /root/epics/base-3.14.12.3/dbd/menuAlarmStat.dbd
+../O.Common/voltageLogger.dbd : /root/epics/base-3.14.12.3/dbd/menuCompress.dbd
+../O.Common/voltageLogger.dbd : /root/epics/base-3.14.12.3/dbd/menuFtype.dbd
+../O.Common/voltageLogger.dbd : /root/epics/base-3.14.12.3/dbd/menuIvoa.dbd
+../O.Common/voltageLogger.dbd : /root/epics/base-3.14.12.3/dbd/menuOmsl.dbd
+../O.Common/voltageLogger.dbd : /root/epics/base-3.14.12.3/dbd/menuPini.dbd
+../O.Common/voltageLogger.dbd : /root/epics/base-3.14.12.3/dbd/menuPriority.dbd
+../O.Common/voltageLogger.dbd : /root/epics/base-3.14.12.3/dbd/menuScan.dbd
+../O.Common/voltageLogger.dbd : /root/epics/base-3.14.12.3/dbd/menuSimm.dbd
+../O.Common/voltageLogger.dbd : /root/epics/base-3.14.12.3/dbd/menuYesNo.dbd
+../O.Common/voltageLogger.dbd : /root/epics/base-3.14.12.3/dbd/dbCommon.dbd
+
+
+../O.Common/voltageLoggerInclude.dbd : ../Makefile
