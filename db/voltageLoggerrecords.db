@@ -52,6 +52,7 @@ record(sub, "$(SubDet):SAVEDATA"){
        field(DESC, "saves data collected to a root file")
 }
 
+#High voltage record with alarm attached 
 record(calc, "$(SubDet):HV"){
        field(INPA, "$(SubDet):VOLTAGE.A CPP")
        field(CALC, "A")	   
@@ -63,6 +64,7 @@ record(calc, "$(SubDet):HV"){
        field(LSV, "MAJOR")
 }
 
+#Channel 0 discriminator voltage record with alarm attached 
 record(calc, "$(SubDet):DISC0"){
        field(INPA, "$(SubDet):VOLTAGE.C CPP")
        field(CALC, "A")	   
@@ -74,6 +76,7 @@ record(calc, "$(SubDet):DISC0"){
        field(LSV, "MAJOR")
 }
 
+#Channel 1 discriminator voltage record with alarm attached 
 record(calc, "$(SubDet):DISC1"){
        field(INPA, "$(SubDet):VOLTAGE.D CPP")
        field(CALC, "A")	   
@@ -85,6 +88,7 @@ record(calc, "$(SubDet):DISC1"){
        field(LSV, "MAJOR")
 }
 
+#Channel 2 discriminator voltage record with alarm attached 
 record(calc, "$(SubDet):DISC2"){
        field(INPA, "$(SubDet):VOLTAGE.E CPP")
        field(CALC, "A")	   
@@ -96,6 +100,7 @@ record(calc, "$(SubDet):DISC2"){
        field(LSV, "MAJOR")
 }
 
+#Channel 3 discriminator voltage record with alarm attached 
 record(calc, "$(SubDet):DISC3"){
        field(INPA, "$(SubDet):VOLTAGE.F CPP")
        field(CALC, "A")	   
