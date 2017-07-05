@@ -30,6 +30,7 @@ record(sub, "$(SubDet):VOLTAGE") {
        field(SNAM, "getVoltage")
        field(DESC, "get the voltages")
        field(SCAN, "1 second")
+       #field(INPJ, "1")
 }
 
 #the BEAST interface
@@ -49,4 +50,59 @@ record(sub,"$(SubDet):SETPATH"){
 record(sub, "$(SubDet):SAVEDATA"){
        field(SNAM, "saveData")
        field(DESC, "saves data collected to a root file")
+}
+
+record(calc, "$(SubDet):HV"){
+       field(INPA, "$(SubDet):VOLTAGE.A CPP")
+       field(CALC, "A")	   
+       field(SCAN, "Passive")
+       field(OOPT, "On Change")  
+       field(HIGH, "3.0")
+       field(LOW,  "1.0")
+       field(HSV, "MAJOR")
+       field(LSV, "MAJOR")
+}
+
+record(calc, "$(SubDet):DISC0"){
+       field(INPA, "$(SubDet):VOLTAGE.C CPP")
+       field(CALC, "A")	   
+       field(SCAN, "Passive")
+       field(OOPT, "On Change")  
+       field(HIGH, "3.0")
+       field(LOW,  "1.0")
+       field(HSV, "MAJOR")
+       field(LSV, "MAJOR")
+}
+
+record(calc, "$(SubDet):DISC1"){
+       field(INPA, "$(SubDet):VOLTAGE.D CPP")
+       field(CALC, "A")	   
+       field(SCAN, "Passive")
+       field(OOPT, "On Change")  
+       field(HIGH, "3.0")
+       field(LOW,  "1.0")
+       field(HSV, "MAJOR")
+       field(LSV, "MAJOR")
+}
+
+record(calc, "$(SubDet):DISC2"){
+       field(INPA, "$(SubDet):VOLTAGE.E CPP")
+       field(CALC, "A")	   
+       field(SCAN, "Passive")
+       field(OOPT, "On Change")  
+       field(HIGH, "3.0")
+       field(LOW,  "1.0")
+       field(HSV, "MAJOR")
+       field(LSV, "MAJOR")
+}
+
+record(calc, "$(SubDet):DISC3"){
+       field(INPA, "$(SubDet):VOLTAGE.F CPP")
+       field(CALC, "A")	   
+       field(SCAN, "Passive")
+       field(OOPT, "On Change")  
+       field(HIGH, "3.0")
+       field(LOW,  "1.0")
+       field(HSV, "MAJOR")
+       field(LSV, "MAJOR")
 }
