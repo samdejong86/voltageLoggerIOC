@@ -72,8 +72,8 @@ record(calc, "$(SubDet):DISC0"){
        field(OOPT, "On Change")  
        field(HIGH, "3.0")
        field(LOW,  "1.0")
-       field(HSV, "MAJOR")
-       field(LSV, "MAJOR")
+       field(HSV, "MINOR")
+       field(LSV, "MINOR")
 }
 
 #Channel 1 discriminator voltage record with alarm attached 
@@ -84,8 +84,8 @@ record(calc, "$(SubDet):DISC1"){
        field(OOPT, "On Change")  
        field(HIGH, "3.0")
        field(LOW,  "1.0")
-       field(HSV, "MAJOR")
-       field(LSV, "MAJOR")
+       field(HSV, "MINOR")
+       field(LSV, "MINOR")
 }
 
 #Channel 2 discriminator voltage record with alarm attached 
@@ -96,8 +96,8 @@ record(calc, "$(SubDet):DISC2"){
        field(OOPT, "On Change")  
        field(HIGH, "3.0")
        field(LOW,  "1.0")
-       field(HSV, "MAJOR")
-       field(LSV, "MAJOR")
+       field(HSV, "MINOR")
+       field(LSV, "MINOR")
 }
 
 #Channel 3 discriminator voltage record with alarm attached 
@@ -108,6 +108,6 @@ record(calc, "$(SubDet):DISC3"){
        field(OOPT, "On Change")  
        field(HIGH, "3.0")
        field(LOW,  "1.0")
-       field(HSV, "MAJOR")
-       field(LSV, "MAJOR")
+       field(HSV, "MINOR")
+       field(LSV, "MINOR")
 }
