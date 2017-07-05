@@ -57,7 +57,6 @@ record(calc, "$(SubDet):HV"){
        field(INPA, "$(SubDet):VOLTAGE.A CPP")
        field(CALC, "A")	   
        field(SCAN, "Passive")
-       field(OOPT, "On Change")  
        field(HIGH, "3.0")          #Upper range of alarm
        field(LOW,  "1.0")          #lower range of alarm
        field(HSV, "MAJOR")         #Major alarm when value is above HIGH
@@ -69,7 +68,6 @@ record(calc, "$(SubDet):DISC0"){
        field(INPA, "$(SubDet):VOLTAGE.C CPP")
        field(CALC, "A")	   
        field(SCAN, "Passive")
-       field(OOPT, "On Change")  
        field(HIGH, "3.0")
        field(LOW,  "1.0")
        field(HSV, "MINOR")	#Minor alarm when value is above HIGH
@@ -81,7 +79,6 @@ record(calc, "$(SubDet):DISC1"){
        field(INPA, "$(SubDet):VOLTAGE.D CPP")
        field(CALC, "A")	   
        field(SCAN, "Passive")
-       field(OOPT, "On Change")  
        field(HIGH, "3.0")
        field(LOW,  "1.0")
        field(HSV, "MINOR")
@@ -93,7 +90,6 @@ record(calc, "$(SubDet):DISC2"){
        field(INPA, "$(SubDet):VOLTAGE.E CPP")
        field(CALC, "A")	   
        field(SCAN, "Passive")
-       field(OOPT, "On Change")  
        field(HIGH, "3.0")
        field(LOW,  "1.0")
        field(HSV, "MINOR")
@@ -105,7 +101,6 @@ record(calc, "$(SubDet):DISC3"){
        field(INPA, "$(SubDet):VOLTAGE.F CPP")
        field(CALC, "A")	   
        field(SCAN, "Passive")
-       field(OOPT, "On Change")  
        field(HIGH, "3.0")
        field(LOW,  "1.0")
        field(HSV, "MINOR")
