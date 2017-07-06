@@ -55,7 +55,8 @@ record(sub, "$(SubDet):SAVEDATA"){
 #High voltage record with alarm attached 
 record(calc, "$(SubDet):HV"){
        field(INPA, "$(SubDet):VOLTAGE.A CPP")
-       field(CALC, "A")	   
+       field(DESC, "He3 tube HV setting")
+       field(CALC, "A*1000")	   
        field(SCAN, "Passive")
        field(HIGH, "3.0")          #Upper range of alarm
        field(LOW,  "1.0")          #lower range of alarm
@@ -66,6 +67,7 @@ record(calc, "$(SubDet):HV"){
 #Channel 0 discriminator voltage record with alarm attached 
 record(calc, "$(SubDet):DISC0"){
        field(INPA, "$(SubDet):VOLTAGE.C CPP")
+       field(DESC, "Channel 0 Discriminator setting")
        field(CALC, "A")	   
        field(SCAN, "Passive")
        field(HIGH, "3.0")
@@ -77,6 +79,7 @@ record(calc, "$(SubDet):DISC0"){
 #Channel 1 discriminator voltage record with alarm attached 
 record(calc, "$(SubDet):DISC1"){
        field(INPA, "$(SubDet):VOLTAGE.D CPP")
+       field(DESC, "Channel 1 Discriminator setting")
        field(CALC, "A")	   
        field(SCAN, "Passive")
        field(HIGH, "3.0")
@@ -88,6 +91,7 @@ record(calc, "$(SubDet):DISC1"){
 #Channel 2 discriminator voltage record with alarm attached 
 record(calc, "$(SubDet):DISC2"){
        field(INPA, "$(SubDet):VOLTAGE.E CPP")
+       field(DESC, "Channel 2 Discriminator setting")
        field(CALC, "A")	   
        field(SCAN, "Passive")
        field(HIGH, "3.0")
@@ -99,6 +103,7 @@ record(calc, "$(SubDet):DISC2"){
 #Channel 3 discriminator voltage record with alarm attached 
 record(calc, "$(SubDet):DISC3"){
        field(INPA, "$(SubDet):VOLTAGE.F CPP")
+       field(DESC, "Channel 3 Discriminator setting")
        field(CALC, "A")	   
        field(SCAN, "Passive")
        field(HIGH, "3.0")
