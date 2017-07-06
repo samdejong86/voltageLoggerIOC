@@ -1,0 +1,36 @@
+This is the  EPICS IOC for the DATAQ DI-2108-P High speed DAQ which monitors voltages for the helium-3 tube system in BEAST. These packages will need to be installed:
+
+kernel-headers
+kernel-devel
+gcc.x86_64
+gcc-c++.x86_64
+libusb1-devel.x86_64
+
+The EPICS base will need to be installed as well (located at https://www.aps.anl.gov/epics/download/base/baseR3.14.12.3.tar.gz)
+    
+    you will need to set EPICS_HOST_ARCH to the output of EpicsHostArch.pl using this command:
+    	export EPICS_HOST_ARCH=$(perl startup/EpicsHostArch)   
+
+    Now you can make using
+    	make clean uninstall
+	make
+    
+    When installing, you may get an error about 'readline.h'. if this occurs, open 'configure/os/CONFIG_SITE.Common.linux-x86_64' and comment out the line that says 'COMMANDLINE_LIBRARY = READLINE' (line 27ish).
+    
+Now install ROOT (use V5.34.34, located at https://root.cern.ch/download/root_v5.34.34.source.tar.gz)
+    instructions are in the tarball
+
+    make sure you source the initialization script:
+    	 source bin/thisroot.sh   (from the ROOT base directory)
+
+Once these installations are complete, the voltageLoggerIOC software can be built.
+
+     First, open 'configure/RELEASE' (from the DAQ base directory), then change 'EPICS_BASE' to point to 'base-3.14.12.3/bin', wherever that location is.
+
+     now build the voltageLoggerIOC software:
+     	 make clean
+	 make
+     	    
+Assuming the build is successful, the IOC can be now be run:
+
+	 ./st.cmd
