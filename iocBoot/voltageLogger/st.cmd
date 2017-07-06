@@ -1,4 +1,4 @@
-
+#!/usr/bin/env bin/linux-x86_64/voltageLogger
 
 #cd ${TOP}
 
