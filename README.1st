@@ -5,6 +5,7 @@ kernel-devel
 gcc.x86_64
 gcc-c++.x86_64
 libusb1-devel.x86_64
+readline-devel.x86_64
 
 The EPICS base will need to be installed as well (located at https://www.aps.anl.gov/epics/download/base/baseR3.14.12.3.tar.gz)
     
