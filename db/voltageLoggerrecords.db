@@ -1,4 +1,4 @@
-record(sub,"$(SubDet):INIT") {
+record(sub,"$(SubDet):CONTROL") {
        field(SNAM,"initialize")
        field(DESC,"Initializes the logger")
        field(INPA, "1") #start taking data if =1
@@ -37,7 +37,7 @@ record(sub, "$(SubDet):VOLTAGE") {
 record(calcout, "$(SubDet):DIGI:BEASTRCINTERFACE") {
        field(INPA, "BEAST:BEASTMASTER:RC:RUN CPP")
        field(CALC, "A?1:0")
-       field(OUT,  "$(SubDet):INIT.A PP")
+       field(OUT,  "$(SubDet):CONTROL.A PP")
        field(SCAN, "Passive")
        field(OOPT, "On Change")
 }

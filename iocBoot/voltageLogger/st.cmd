@@ -20,7 +20,7 @@ dbLoadRecords("db/voltageLoggerrecords.db","SubDet=BEAST:DAQ:HE3:VOLTAGELOGGER,u
 iocInit
 
 ## Start any sequence programs
-dbpf BEAST:DAQ:HE3:VOLTAGELOGGER:INIT.A 1
+dbpf BEAST:DAQ:HE3:VOLTAGELOGGER:CONTROL.A 1
 dbpf BEAST:DAQ:HE3:VOLTAGELOGGER:SETPATH.A 0
 dbgrep "*"
 #seq sncxxx,"user=samHost"
