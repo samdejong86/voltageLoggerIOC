@@ -58,8 +58,8 @@ record(calc, "$(SubDet):HV"){
        field(DESC, "He3 tube HV setting")
        field(CALC, "A*1000")	   
        field(SCAN, "Passive")
-       field(HIGH, "3.0")          #Upper range of alarm
-       field(LOW,  "1.0")          #lower range of alarm
+       field(HIGH, "3000")          #Upper range of alarm
+       field(LOW,  "1000")          #lower range of alarm
        field(HSV, "MAJOR")         #Major alarm when value is above HIGH
        field(LSV, "MAJOR")	   #Major alarm when value is below LOW
 }
