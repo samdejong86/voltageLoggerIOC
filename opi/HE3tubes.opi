@@ -933,7 +933,7 @@ $(pv_value)</tooltip>
     <border_style>0</border_style>
     <forecolor_alarm_sensitive>true</forecolor_alarm_sensitive>
     <alarm_pulsing>true</alarm_pulsing>
-    <precision>3</precision>
+    <precision>0</precision>
     <tooltip>$(pv_name)
 $(pv_value)</tooltip>
     <horizontal_alignment>0</horizontal_alignment>
