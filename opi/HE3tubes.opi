@@ -208,10 +208,10 @@ $(trace_0_y_pv_value)</tooltip>
     <trace_0_update_delay>100</trace_0_update_delay>
     <trace_1_concatenate_data>true</trace_1_concatenate_data>
     <trace_1_trace_color>
-      <color red="90" green="143" blue="41" />
+      <color red="210" green="38" blue="48" />
     </trace_1_trace_color>
     <trace_3_trace_color>
-      <color red="43" green="43" blue="43" />
+      <color red="90" green="143" blue="41" />
     </trace_3_trace_color>
     <pv_name></pv_name>
     <name>XY Graph</name>
@@ -263,7 +263,7 @@ $(trace_0_y_pv_value)</tooltip>
     <scripts />
     <trace_0_point_size>4</trace_0_point_size>
     <trace_0_trace_color>
-      <color red="210" green="38" blue="48" />
+      <color red="43" green="43" blue="43" />
     </trace_0_trace_color>
     <trace_0_anti_alias>true</trace_0_anti_alias>
     <axis_1_auto_scale_threshold>0.0</axis_1_auto_scale_threshold>
