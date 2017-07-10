@@ -7,3 +7,4 @@
 
 #build files
 voltageLoggerApp/src/O.*
+bin/*
