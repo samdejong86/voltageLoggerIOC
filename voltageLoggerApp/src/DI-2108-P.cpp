@@ -280,9 +280,8 @@ vector<double> DI_2108_P::getReadings(){
   int actual; //used to find out how many bytes were written
   
   //get data from the device
-  //cout<<"before\n";
   r = libusb_bulk_transfer(dev_handle, (1 | LIBUSB_ENDPOINT_IN), recieved, 10000, &actual, 500);
-  //cout<<"after\n";
+
   /*
    *  The device returns a 16 bit value for each channel. libusb converts this whole message
    *  into a char* array. Each char is 8 bits, so the measurement in each channel is composed
