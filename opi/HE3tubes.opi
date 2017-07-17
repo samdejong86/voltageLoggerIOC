@@ -1200,11 +1200,10 @@ $(pv_value)</tooltip>
     <border_style>0</border_style>
     <forecolor_alarm_sensitive>false</forecolor_alarm_sensitive>
     <alarm_pulsing>false</alarm_pulsing>
-    <on_state>1</on_state>
-    <off_state>6</off_state>
     <tooltip>$(pv_name)
 $(pv_value)</tooltip>
     <rules />
+    <bit>-1</bit>
     <enabled>true</enabled>
     <wuid>49b43b1:15cf585a844:-7fc3</wuid>
     <pv_value />
@@ -1222,7 +1221,7 @@ $(pv_value)</tooltip>
     </scale_options>
     <align_to_nearest_second>false</align_to_nearest_second>
     <visible>true</visible>
-    <pv_name>BEAST:DAQ:HE3:DIGI:CONTROL.A</pv_name>
+    <pv_name>BEAST:DAQ:HE3:DIGI:CONTROL.L</pv_name>
     <border_color>
       <color red="0" green="128" blue="255" />
     </border_color>
@@ -1236,7 +1235,7 @@ $(pv_value)</tooltip>
     <width>158</width>
     <x>12</x>
     <name>Image Boolean Indicator_1</name>
-    <data_type>1</data_type>
+    <data_type>0</data_type>
     <y>402</y>
     <foreground_color>
       <color red="0" green="0" blue="0" />
