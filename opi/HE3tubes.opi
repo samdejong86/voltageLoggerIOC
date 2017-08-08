@@ -94,8 +94,10 @@ $(pv_value)</tooltip>
     <axis_1_scale_format></axis_1_scale_format>
     <trace_2_x_axis_index>0</trace_2_x_axis_index>
     <alarm_pulsing>true</alarm_pulsing>
-    <tooltip>$(trace_0_y_pv)
-$(trace_0_y_pv_value)</tooltip>
+    <tooltip>Channel 0: $(trace_0_y_pv_value)
+Channel 1: $(trace_1_y_pv_value)
+Channel 2: $(trace_2_y_pv_value)
+Channel 3: $(trace_3_y_pv_value)</tooltip>
     <trace_0_concatenate_data>true</trace_0_concatenate_data>
     <trace_0_trace_type>0</trace_0_trace_type>
     <border_width>1</border_width>
@@ -213,7 +215,7 @@ $(trace_0_y_pv_value)</tooltip>
     <trace_3_trace_color>
       <color red="90" green="143" blue="41" />
     </trace_3_trace_color>
-    <pv_name></pv_name>
+    <pv_name>BEAST:DAQ:HE3:DIGI:RATES.A</pv_name>
     <name>XY Graph</name>
     <trace_1_trace_type>0</trace_1_trace_type>
     <axis_0_auto_scale>true</axis_0_auto_scale>
