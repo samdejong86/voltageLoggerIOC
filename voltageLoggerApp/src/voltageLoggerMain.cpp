@@ -248,12 +248,15 @@ int main(int argc,char *argv[])
   
   iocsh(NULL);
 
-  if(logger.isRunning()){
-    while(logger.isRec()) sleep(0.5);
-    logger.stopScan();
-    logger.reset();
-    logger.close();
-  }
+   if(logger.isInitialized()){ 
+      cout<<"stopping recording...\n";
+      while(logger.isRec()) sleep(0.1);
+      logger.stopScan();
+      logger.softReset();
+      logger.close();
+	
+    }
+
 
   if(ts.size()!=0) writeNtuple();
 
